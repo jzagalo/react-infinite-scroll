@@ -18,7 +18,7 @@ code {
   margin: 30px 5px;
 }
 
-.container div{
+.container div.hvrbox{
   background-color: white;
   flex: 1 0 calc(33.33% - 10px);
   margin: 5px; 
@@ -41,7 +41,7 @@ div.hvrbox * {
 }
 .hvrbox img {
 	max-width: 100%;
-  height: 100%;
+    height: 100%;
 }
 .hvrbox .hvrbox-layer_bottom {
 	display: block;
@@ -69,7 +69,7 @@ div.hvrbox * {
 }
 .hvrbox .hvrbox-text {
 	text-align: center;
-  background: #eee;
+    background: #eee;
 	font-size: 18px;
 	display: inline-block;
 	position: absolute;
@@ -93,7 +93,7 @@ div.hvrbox * {
 	display: block;
 }
 
-@media (min-width:320px)  { 
+@media (min-width:100px)  { 
   .container div {    
     flex: 1 0 calc(100% - 10px)  
   }
