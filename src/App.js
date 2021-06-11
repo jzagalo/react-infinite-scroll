@@ -43,7 +43,7 @@ function App(){
                 const url = 'https://farm'+ pix.farm + '.staticflickr.com/' + pix.server + '/' + pix.id + '_' + pix.secret + '.jpg'          
                 return(
                     <div className="hvrbox"  key={pix.id + index }>                         
-                        <img src={url} className="App-logo" alt="logo" /> 
+                        <img src={url} className="App-logo" alt="logo" loading="lazy" /> 
                         <div className="hvrbox-layer_top">                           
                           <div className="hvrbox-text">
                           <h5 className="underline">Picture </h5>  
