@@ -108,11 +108,29 @@ div.hvrbox * {
   .container div.hvrbox {    
     flex: 1 0 calc(100% - 10px)  
   }
+
+  .fav-icon {
+	 position: absolute;
+	 top: -9% !important;
+	 right: -11px !important;
+	 font-size: 23px !important;
+	}
+  
 }
 
 @media (min-width:480px)  { 
   .container div.hvrbox {    
     flex: 1 0 calc(50% - 10px);   
+  }
+
+  .fav-icon{
+	top: -5% !important;
+    right: -28px !important;
+    font-size: 21px !important;
+  }
+
+  #false, #true{
+	  font-size:14px;
   }
 }
 
@@ -125,6 +143,10 @@ div.hvrbox * {
 @media (min-width:801px)  { 
   .container div.hvrbox {    
     flex: 1 0 calc(33.33% - 10px);   
+  }
+
+  .fav-icon {
+	top: -10% !important
   }
 }
 
@@ -152,7 +174,7 @@ div.hvrbox * {
 }
 .fav-icon{
 	position: absolute;
-    top: -47%;
+    top: 99%;
     right: -35px;
     font-size: 25px;
 }
@@ -189,4 +211,6 @@ div.hvrbox * {
  .load-more{
 	 background-color: transparent;
 	 color:transparent;
+	 outline: 0;
+	 border: none;
  }
