@@ -1,5 +1,4 @@
 import React, {  useState, useEffect, useRef } from 'react'
-import'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 import mainLoader from'./loader.gif';
 
