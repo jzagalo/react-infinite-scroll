@@ -50,7 +50,7 @@ function App(){
                           <div>{pix.id}</div> 
                           <button onClick={ () => toggleFavorite(pix) }   ref={(el) => {myRefs.current[pix.id]=el }}  id={favoriteClass}>
                               Toggle Favorite
-                              <i class="fav-icon">&hearts;</i> 
+                              <i className="fav-icon">&hearts;</i> 
                            </button> 
                         </div>
                     </div> 
@@ -60,6 +60,8 @@ function App(){
 
             setPictureGallery(pictureGallery => [...pictureGallery, ...pixCollection]);   
             setLoading(true);          
+        }).catch(error => {
+          console.error('Error:', error);
         });          
   }
 
